@@ -1,13 +1,580 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="bootstrap.min.css">
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
     <title>Formulaire</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Formulaire</h1>
-    
-</body>
+    <div class="container">
+      <form class="row g-3">
+        <div class="col-12">
+          <label for="inputAddress" class="form-label">Adresse</label>
+          <input type="text" class="form-control" id="inputAddress" />
+        </div>
+        <div class="col-12">
+          <label for="inputAddress2" class="form-label">Adresse suite</label>
+          <input type="text" class="form-control" id="inputAddress2" />
+        </div>
+        <div class="col-md-8">
+          <label for="inputCity" class="form-label">Ville</label>
+          <input type="text" class="form-control" id="inputCity" />
+        </div>
+        <div class="col-md-4">
+          <label for="inputZip" class="form-label">Code Postal</label>
+          <input type="text" class="form-control" id="inputZip" />
+        </div>
+
+        <div class="col-12">
+          <label for="inputType" class="form-label"
+            >Votre bien est un(e)?</label
+          >
+          <select id="inputState" class="form-select" required>
+            <option>Studio</option>
+            <option>T1 (une cuisine indépendante)</option>
+            <option>T2 (une chambre indépendante)</option>
+            <option>T3 (deux chambres indépendantes)</option>
+            <option>T4 (trois chambres indépendantes)</option>
+            <option>T5 (quatre chambres indépendantes)</option>
+            <option>Maison / Villa</option>
+            <option>Autre</option>
+          </select>
+        </div>
+
+        <div class="col-12">
+          <label class="form-label" for="inputNumber"
+            >Quelle est sa capacité d'accueil ?</label
+          >
+          <div class="row justify-content-center">
+            <div class="col-1">
+              <label class="form-check-label" for="inputCapacity1"> 1 </label>
+            </div>
+            <div class="col-1">
+              <label class="form-check-label" for="inputCapacity2"> 2 </label>
+            </div>
+            <div class="col-1">
+              <label class="form-check-label" for="inputCapacity3"> 3 </label>
+            </div>
+            <div class="col-1">
+              <label class="form-check-label" for="inputCapacity4"> 4 </label>
+            </div>
+            <div class="col-1">
+              <label class="form-check-label" for="inputCapacity5"> 5 </label>
+            </div>
+            <div class="col-1">
+              <label class="form-check-label" for="inputCapacity6"> 6 </label>
+            </div>
+            <div class="col-1">
+              <label class="form-check-label" for="inputCapacity7"> 7 </label>
+            </div>
+            <div class="col-1">
+              <label class="form-check-label" for="inputCapacity8"> 8 </label>
+            </div>
+            <div class="col-1">
+              <label class="form-check-label" for="inputCapacity9"> 9 </label>
+            </div>
+            <div class="col-1">
+              <label class="form-check-label" for="inputCapacity10"> 10 </label>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-1">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="inputCapacity"
+                id="inputCapacity1"
+              />
+            </div>
+            <div class="col-1">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="inputCapacity"
+                id="inputCapacity2"
+              />
+            </div>
+            <div class="col-1">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="inputCapacity"
+                id="inputCapacity3"
+              />
+            </div>
+            <div class="col-1">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="inputCapacity"
+                id="inputCapacity4"
+              />
+            </div>
+            <div class="col-1">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="inputCapacity"
+                id="inputCapacity5"
+              />
+            </div>
+            <div class="col-1">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="inputCapacity"
+                id="inputCapacity6"
+              />
+            </div>
+            <div class="col-1">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="inputCapacity"
+                id="inputCapacity7"
+              />
+            </div>
+            <div class="col-1">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="inputCapacity"
+                id="inputCapacity8"
+              />
+            </div>
+            <div class="col-1">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="inputCapacity"
+                id="inputCapacity9"
+              />
+            </div>
+            <div class="col-1">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="inputCapacity"
+                id="inputCapacity10"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <label class="form-label" for="inputDuration"
+            >Pour combien de temps souhaiteriez-vous nous confier votre bien
+            ?</label
+          >
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="inputDuration"
+              id="inputDuration1"
+            />
+            <label class="form-check-label" for="inputDuration1"
+              >Entre 2 semaines et 6 mois</label
+            >
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="inputDuration"
+              id="inputDuration2"
+            />
+            <label class="form-check-label" for="inputDuration2"
+              >Entre 6 mois et 12 mois</label
+            >
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="inputDuration"
+              id="inputDuration3"
+            />
+            <label class="form-check-label" for="inputDuration3">1 an</label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="inputDuration"
+              id="inputDuration4"
+            />
+            <label class="form-check-label" for="inputDuration4">2 ans</label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="inputDuration"
+              id="inputDuration5"
+            />
+            <label class="form-check-label" for="inputDuration5">3 ans</label>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <label class="form-label" for="inputEquipment"
+            >Avez-vous l'un de ces équipements ?</label
+          >
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value="Piscine"
+              id="inputEquipment1"
+            />
+            <label class="form-check-label" for="inputEquipment1">
+              Piscine
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value="Parking"
+              id="inputEquipment2"
+            />
+            <label class="form-check-label" for="inputEquipment2">
+              Parking
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value="Jardin"
+              id="inputEquipment3"
+            />
+            <label class="form-check-label" for="inputEquipment3">
+              Jardin
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value="Balcon"
+              id="inputEquipment4"
+            />
+            <label class="form-check-label" for="inputEquipment4">
+              Balcon
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value="Vue Unique"
+              id="inputEquipment5"
+            />
+            <label class="form-check-label" for="inputEquipment5">
+              Vue Unique
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value="Autre"
+              id="inputEquipment6"
+            />
+            <label class="form-check-label" for="inputEquipment6">
+              Autre
+            </label>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <label class="form-label" for="inputPicture"
+            >Avez-vous des photos de votre logement ?</label
+          >
+          <input class="form-control" type="file" id="inputPicture" />
+        </div>
+
+        <div class="col-12">
+          <label class="form-label" for="inputNumber"
+            >Pouvez-vous me donner le nombre de biens immobiliers que vous
+            possédez ?</label
+          >
+          <div class="row justify-content-center">
+            <div class="col-1">
+              <label class="form-check-label" for="inputNumber1"> 1 </label>
+            </div>
+            <div class="col-1">
+              <label class="form-check-label" for="inputNumber2"> 2 </label>
+            </div>
+            <div class="col-1">
+              <label class="form-check-label" for="inputNumber3"> 3 </label>
+            </div>
+            <div class="col-1">
+              <label class="form-check-label" for="inputNumber4"> 4 </label>
+            </div>
+            <div class="col-1">
+              <label class="form-check-label" for="inputNumber5"> 5 </label>
+            </div>
+            <div class="col-1">
+              <label class="form-check-label" for="inputNumber6"> 6 </label>
+            </div>
+            <div class="col-1">
+              <label class="form-check-label" for="inputNumber7"> 7 </label>
+            </div>
+            <div class="col-1">
+              <label class="form-check-label" for="inputNumber8"> 8 </label>
+            </div>
+            <div class="col-1">
+              <label class="form-check-label" for="inputNumber9"> 9 </label>
+            </div>
+            <div class="col-1">
+              <label class="form-check-label" for="inputNumber10"> 10 </label>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-1">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="inputNumber"
+                id="inputNumber1"
+              />
+            </div>
+            <div class="col-1">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="inputNumber"
+                id="inputNumber2"
+              />
+            </div>
+            <div class="col-1">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="inputNumber"
+                id="inputNumber3"
+              />
+            </div>
+            <div class="col-1">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="inputNumber"
+                id="inputNumber4"
+              />
+            </div>
+            <div class="col-1">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="inputNumber"
+                id="inputNumber5"
+              />
+            </div>
+            <div class="col-1">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="inputNumber"
+                id="inputNumber6"
+              />
+            </div>
+            <div class="col-1">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="inputNumber"
+                id="inputNumber7"
+              />
+            </div>
+            <div class="col-1">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="inputNumber"
+                id="inputNumber8"
+              />
+            </div>
+            <div class="col-1">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="inputNumber"
+                id="inputNumber9"
+              />
+            </div>
+            <div class="col-1">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="inputNumber"
+                id="inputNumber10"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <label for="inputFullName" class="form-label"
+            >Comment vous appelez-vous ? (Prénom + Nom)</label
+          >
+          <input type="text" class="form-control" id="inputFullName" />
+        </div>
+
+        <div class="col-12">
+          <label for="inputPhone" class="form-label"
+            >Votre numéro de téléphone ?</label
+          >
+          <input type="text" class="form-control" id="inputPhone" />
+        </div>
+
+        <div class="col-12">
+          <label for="inputEmail" class="form-label"
+            >Votre e-mail ? (Pour vous envoyer vos résultats)</label
+          >
+          <input type="email" class="form-control" id="inputEmail" />
+        </div>
+
+        <div class="col-12">
+          <label class="form-label" for="inputKnown"
+            >Comment avez-vous connu Comme My Home ?</label
+          >
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="inputKnown"
+              id="inputKnown1"
+            />
+            <label class="form-check-label" for="inputKnown1"
+              >Site internet</label
+            >
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="inputKnown"
+              id="inputKnown2"
+            />
+            <label class="form-check-label" for="inputKnown2"
+              >Réseaux sociaux</label
+            >
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="inputKnown"
+              id="inputKnown3"
+            />
+            <label class="form-check-label" for="inputKnown3">Publicité</label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="inputKnown"
+              id="inputKnown4"
+            />
+            <label class="form-check-label" for="inputKnown4"
+              >Bouche à oreille</label
+            >
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="inputKnown"
+              id="inputKnown5"
+            />
+            <label class="form-check-label" for="inputKnown5">Presse</label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="inputKnown"
+              id="inputKnown6"
+            />
+            <label class="form-check-label" for="inputKnown6"
+              >Salon de l'immobilier</label
+            >
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="inputKnown"
+              id="inputKnown7"
+            />
+            <label class="form-check-label" for="inputKnown7">Autre</label>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <label class="form-label" for="inputNature">Type de résidence</label>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="inputNature"
+              id="inputNature1"
+            />
+            <label class="form-check-label" for="inputNature1"
+              >Résidence principale</label
+            >
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="inputNature"
+              id="inputNature2"
+            />
+            <label class="form-check-label" for="inputNature2"
+              >Résidence secondaire</label
+            >
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="inputNature"
+              id="inputNature3"
+            />
+            <label class="form-check-label" for="inputNature3"
+              >Non-résidentiel (bail commercial, bureau, etc)</label
+            >
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="inputNature"
+              id="inputNature4"
+            />
+            <label class="form-check-label" for="inputNature4">Autre</label>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
