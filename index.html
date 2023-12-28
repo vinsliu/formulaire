@@ -9,31 +9,32 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="style.css" />
     <title>Formulaire</title>
   </head>
   <body>
-    <h1>Formulaire</h1>
+    <h1 class="text-center mb-4">Formulaire</h1>
     <div class="container">
-      <form class="row g-3">
+      <form class="row g-3 border border-black rounded">
         <div class="col-12">
-          <label for="inputAddress" class="form-label">Adresse</label>
+          <label for="inputAddress" class="form-label main-label">Adresse</label>
           <input type="text" class="form-control" id="inputAddress" />
         </div>
         <div class="col-12">
-          <label for="inputAddress2" class="form-label">Adresse suite</label>
+          <label for="inputAddress2" class="form-label main-label">Adresse suite</label>
           <input type="text" class="form-control" id="inputAddress2" />
         </div>
         <div class="col-md-8">
-          <label for="inputCity" class="form-label">Ville</label>
+          <label for="inputCity" class="form-label main-label">Ville</label>
           <input type="text" class="form-control" id="inputCity" />
         </div>
         <div class="col-md-4">
-          <label for="inputZip" class="form-label">Code Postal</label>
+          <label for="inputZip" class="form-label main-label">Code Postal</label>
           <input type="text" class="form-control" id="inputZip" />
         </div>
 
         <div class="col-12">
-          <label for="inputType" class="form-label"
+          <label for="inputType" class="form-label main-label"
             >Votre bien est un(e)?</label
           >
           <select id="inputState" class="form-select" required>
@@ -49,7 +50,7 @@
         </div>
 
         <div class="col-12">
-          <label class="form-label" for="inputNumber"
+          <label class="form-label main-label" for="inputNumber"
             >Quelle est sa capacité d'accueil ?</label
           >
           <div class="row justify-content-center">
@@ -169,7 +170,7 @@
         </div>
 
         <div class="col-12">
-          <label class="form-label" for="inputDuration"
+          <label class="form-label main-label" for="inputDuration"
             >Pour combien de temps souhaiteriez-vous nous confier votre bien
             ?</label
           >
@@ -225,7 +226,7 @@
         </div>
 
         <div class="col-12">
-          <label class="form-label" for="inputEquipment"
+          <label class="form-label main-label" for="inputEquipment"
             >Avez-vous l'un de ces équipements ?</label
           >
           <div class="form-check">
@@ -297,14 +298,14 @@
         </div>
 
         <div class="col-12">
-          <label class="form-label" for="inputPicture"
+          <label class="form-label main-label" for="inputPicture"
             >Avez-vous des photos de votre logement ?</label
           >
           <input class="form-control" type="file" id="inputPicture" />
         </div>
 
         <div class="col-12">
-          <label class="form-label" for="inputNumber"
+          <label class="form-label main-label" for="inputNumber"
             >Pouvez-vous me donner le nombre de biens immobiliers que vous
             possédez ?</label
           >
@@ -425,28 +426,28 @@
         </div>
 
         <div class="col-12">
-          <label for="inputFullName" class="form-label"
+          <label for="inputFullName" class="form-label main-label"
             >Comment vous appelez-vous ? (Prénom + Nom)</label
           >
           <input type="text" class="form-control" id="inputFullName" />
         </div>
 
         <div class="col-12">
-          <label for="inputPhone" class="form-label"
+          <label for="inputPhone" class="form-label main-label"
             >Votre numéro de téléphone ?</label
           >
           <input type="text" class="form-control" id="inputPhone" />
         </div>
 
         <div class="col-12">
-          <label for="inputEmail" class="form-label"
+          <label for="inputEmail" class="form-label main-label"
             >Votre e-mail ? (Pour vous envoyer vos résultats)</label
           >
           <input type="email" class="form-control" id="inputEmail" />
         </div>
 
         <div class="col-12">
-          <label class="form-label" for="inputKnown"
+          <label class="form-label main-label" for="inputKnown"
             >Comment avez-vous connu Comme My Home ?</label
           >
           <div class="form-check">
@@ -523,7 +524,7 @@
         </div>
 
         <div class="col-12">
-          <label class="form-label" for="inputNature">Type de résidence</label>
+          <label class="form-label main-label" for="inputNature">Type de résidence</label>
           <div class="form-check">
             <input
               class="form-check-input"
@@ -568,7 +569,9 @@
           </div>
         </div>
 
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn col-md-4 mx-auto btn-custom">
+          Submit
+        </button>
       </form>
     </div>
     <script
