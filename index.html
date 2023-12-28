@@ -16,7 +16,7 @@
   <body>
     <h1 class="text-center mb-4">Formulaire</h1>
     <div class="container">
-      <form class="row g-3 border border-black rounded">
+      <form id="myForm" class="row g-3 border border-black rounded">
         <!-- Section Adresse -->
         <div class="col-12">
           <label for="inputAddress" class="form-label main-label"
@@ -60,9 +60,9 @@
 
         <!-- Section Capacité -->
         <div class="col-12">
-          <label class="form-label main-label" for="inputNumber"
-            >Quelle est sa capacité d'accueil ?</label
-          >
+          <p class="form-label main-label">
+            Quelle est sa capacité d'accueil ?
+          </p>
           <div class="row justify-content-center">
             <div class="col-1">
               <label class="form-check-label" for="inputCapacity1"> 1 </label>
@@ -181,10 +181,9 @@
 
         <!-- Section Durée -->
         <div class="col-12">
-          <label class="form-label main-label" for="inputDuration"
-            >Pour combien de temps souhaiteriez-vous nous confier votre bien
-            ?</label
-          >
+          <p class="form-label main-label">
+            Pour combien de temps souhaiteriez-vous nous confier votre bien ?
+          </p>
           <div class="form-check">
             <input
               class="form-check-input"
@@ -238,9 +237,9 @@
 
         <!-- Section Equipements -->
         <div class="col-12">
-          <label class="form-label main-label" for="inputEquipment"
-            >Avez-vous l'un de ces équipements ?</label
-          >
+          <p class="form-label main-label">
+            Avez-vous l'un de ces équipements ?
+          </p>
           <div class="form-check">
             <input
               class="form-check-input"
@@ -461,17 +460,18 @@
 
         <!-- Section Comment avez vous connu Comme My Home -->
         <div class="col-12">
-          <label class="form-label main-label" for="inputKnown"
-            >Comment avez-vous connu Comme My Home ?</label
-          >
+          <p class="form-label main-label">
+            Comment avez-vous connu Comme My Home ?
+          </p>
           <div class="form-check">
             <input
               class="form-check-input"
               type="radio"
               name="inputKnown"
               id="inputKnown1"
+              value="Site internet"
             />
-            <label class="form-check-label" for="inputKnown1"
+            <label for="inputKnown1" class="form-check-label"
               >Site internet</label
             >
           </div>
@@ -481,8 +481,9 @@
               type="radio"
               name="inputKnown"
               id="inputKnown2"
+              value="Réseaux sociaux"
             />
-            <label class="form-check-label" for="inputKnown2"
+            <label for="inputKnown2" class="form-check-label"
               >Réseaux sociaux</label
             >
           </div>
@@ -492,8 +493,9 @@
               type="radio"
               name="inputKnown"
               id="inputKnown3"
-            />
-            <label class="form-check-label" for="inputKnown3">Publicité</label>
+              value="Publicité"
+            />Publicité
+            <label for="inputKnown3" class="form-check-label">Publicité</label>
           </div>
           <div class="form-check">
             <input
@@ -501,8 +503,9 @@
               type="radio"
               name="inputKnown"
               id="inputKnown4"
+              value="Bouche à oreille"
             />
-            <label class="form-check-label" for="inputKnown4"
+            <label for="inputKnown4" class="form-check-label"
               >Bouche à oreille</label
             >
           </div>
@@ -512,8 +515,9 @@
               type="radio"
               name="inputKnown"
               id="inputKnown5"
+              value="Presse"
             />
-            <label class="form-check-label" for="inputKnown5">Presse</label>
+            <label for="inputKnown5" class="form-check-label">Presse</label>
           </div>
           <div class="form-check">
             <input
@@ -521,8 +525,9 @@
               type="radio"
               name="inputKnown"
               id="inputKnown6"
+              value="Salon de l'immobilier"
             />
-            <label class="form-check-label" for="inputKnown6"
+            <label for="inputKnown6" class="form-check-label"
               >Salon de l'immobilier</label
             >
           </div>
@@ -532,8 +537,9 @@
               type="radio"
               name="inputKnown"
               id="inputKnown7"
+              value="Autre"
             />
-            <label class="form-check-label" for="inputKnown7">Autre</label>
+            <label for="inputKnown7" class="form-check-label">Autre</label>
           </div>
         </div>
 
@@ -548,8 +554,9 @@
               type="radio"
               name="inputNature"
               id="inputNature1"
+              value="Résidence principale"
             />
-            <label class="form-check-label" for="inputNature1"
+            <label for="inputNature1" class="form-check-label"
               >Résidence principale</label
             >
           </div>
@@ -559,8 +566,8 @@
               type="radio"
               name="inputNature"
               id="inputNature2"
-            />
-            <label class="form-check-label" for="inputNature2"
+              value="Résidence secondaire"
+            /><label for="inputNature2" class="form-check-label"
               >Résidence secondaire</label
             >
           </div>
@@ -570,8 +577,8 @@
               type="radio"
               name="inputNature"
               id="inputNature3"
-            />
-            <label class="form-check-label" for="inputNature3"
+              value="Non-résidentiel (bail commercial, bureau, etc)"
+            /><label for="inputNature3" class="form-check-label"
               >Non-résidentiel (bail commercial, bureau, etc)</label
             >
           </div>
@@ -581,8 +588,8 @@
               type="radio"
               name="inputNature"
               id="inputNature4"
-            />
-            <label class="form-check-label" for="inputNature4">Autre</label>
+              value="Autre"
+            /><label for="inputNature4" class="form-check-label">Autre</label>
           </div>
         </div>
 
@@ -592,6 +599,61 @@
         </button>
       </form>
     </div>
+
+    <div id="result-container" class="mt-4"></div>
+    <pre id="log"></pre>
+
+    <script>
+      document.getElementById("myForm").addEventListener(
+        "submit",
+        function (event) {
+          // Empêche le formulaire de se soumettre normalement
+          event.preventDefault();
+
+          // Récupère les éléments du formulaire
+          var elements = this.elements;
+
+          // Construit une chaîne pour afficher les données
+          var resultString = "<h2>Récapitulatif des données:</h2>";
+
+          for (var i = 0; i < elements.length; i++) {
+            if (elements[i].type !== "submit") {
+              if (elements[i].type === "radio" && !elements[i].checked) {
+                continue; // Ignore les radios non cochées
+              }
+
+              // Vérifie si l'élément est une liste déroulante avec la propriété multiple
+              if (elements[i].type === "select-multiple") {
+                var selectedOptions = [];
+                for (var j = 0; j < elements[i].options.length; j++) {
+                  if (elements[i].options[j].selected) {
+                    selectedOptions.push(elements[i].options[j].textContent);
+                  }
+                }
+                resultString +=
+                  "<p><strong>" +
+                  elements[i].labels[0].textContent +
+                  ":</strong> " +
+                  selectedOptions.join(", ") +
+                  "</p>";
+              } else {
+                resultString +=
+                  "<p><strong>" +
+                  elements[i].labels[0].textContent +
+                  ":</strong> " +
+                  elements[i].value +
+                  "</p>";
+              }
+            }
+          }
+
+          // Affiche les données dans la div résultante
+          var resultContainer = document.getElementById("result-container");
+          resultContainer.innerHTML = resultString;
+        },
+        false
+      );
+    </script>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
